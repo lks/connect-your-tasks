@@ -1,0 +1,32 @@
+{
+    "name": "lks/connect-your-task",
+    "description": "Sync and manage your task from different tools",
+    "keywords": ["task", "sync", "jira", "kanbanize"],
+    "type": "silex-app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joris Calabrese",
+            "email": "joris.calabrese@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "~1.1",
+        "monolog/monolog": ">=1.0.0",
+        "behat/behat": "3.0.*@dev",
+        "jms/serializer-service-provider": "dev-develop",
+        "guzzlehttp/guzzle": "4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Service\\": "Service/",
+            "Entity\\": "Entity/",
+            "Exception\\": "Exception/",
+            "Utility\\": "Utility/",
+            "Dao\\": "Dao/"
+        }
+    }
+}
