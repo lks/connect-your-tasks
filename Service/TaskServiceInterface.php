@@ -12,6 +12,12 @@ namespace Service;
 interface TaskServiceInterface {
 
     /**
+     * @param $boardName
+     * @return mixed
+     */
+    public function getBoard($boardName);
+
+    /**
      * Add a task on a specific board with a given name
      * @param $apiKey
      * @param $taskName

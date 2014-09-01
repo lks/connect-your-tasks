@@ -11,7 +11,8 @@ namespace Service;
 use GuzzleHttp\Client;
 
 
-class UserService {
+class UserService implements UserServiceInterface
+{
 
     protected $client;
 
@@ -32,5 +33,10 @@ class UserService {
 
         $children = $res->xml()->children();
         return "" . $children->apikey;
+    }
+
+    public function searchBoard($boardName, $apiKey)
+    {
+        return null;
     }
 } 

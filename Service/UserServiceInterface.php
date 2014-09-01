@@ -9,6 +9,7 @@
 namespace Service;
 
 
+use Entity\Board;
 use Symfony\Component\Translation\Exception\NotFoundResourceException;
 
 interface UserServiceInterface {
@@ -21,4 +22,12 @@ interface UserServiceInterface {
      * @throws NotFoundResourceException
      */
     public function getKanbanizeApiKey($login, $password);
+
+    /**
+     * Search in the list of boards associated to the user a board with the given name
+     * @param $boardName
+     * @param $apiKey
+     * @return Board Object
+     */
+    public function searchBoard($boardName, $apiKey);
 } 

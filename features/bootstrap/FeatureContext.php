@@ -31,7 +31,7 @@ class FeatureContext implements SnippetAcceptingContext
      */
     public function iAmAKanbanizeUser()
     {
-        $this->kanbanizeApiKey = $this->userService->getKanbanizeApiKey('joris.calabrese@gmail.com', '3yNGXq2Y');
+        $this->kanbanizeApiKey = $this->userService->getKanbanizeApiKey('test.j.calabrese@gmail.com', 'test');
     }
 
     /**
@@ -39,6 +39,7 @@ class FeatureContext implements SnippetAcceptingContext
      */
     public function iHaveTasksInMyPersonalBoard($nbTasks)
     {
+        //tasks list
 
         for ($i = 0; $i < $nbTasks; $i++){
             $this->kanbanizeTaskService->addKanbanizeTasks($this->kanbanizeApiKey, $taskName, $boardName);
