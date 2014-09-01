@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08c170e-2dd9-4d95-b8e2-6d4bd35a069c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Entity/Board.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" afterPath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Service/TaskServiceInterface.php" afterPath="$PROJECT_DIR$/Service/TaskServiceInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Service/UserService.php" afterPath="$PROJECT_DIR$/Service/UserService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Service/UserServiceInterface.php" afterPath="$PROJECT_DIR$/Service/UserServiceInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Unit/Service/UserServiceTest.php" afterPath="$PROJECT_DIR$/Tests/Unit/Service/UserServiceTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/connect-your-tasks.iml" afterPath="$PROJECT_DIR$/.idea/connect-your-tasks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="connect-your-tasks.iws" />
@@ -60,19 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Service/UserService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.7360335" vertical-offset="0" max-vertical-offset="716">
+            <state line="34" column="28" selection-start="730" selection-end="730" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceTest.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserServiceTest.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/Unit/Service/UserServiceTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="268" selection-end="273" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="578">
+            <state line="27" column="5" selection-start="764" selection-end="764" vertical-scroll-proportion="0.64285713" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -327,18 +320,41 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b08c170e-2dd9-4d95-b8e2-6d4bd35a069c" name="Default" comment="" />
       <created>1406623230176</created>
       <updated>1406623230176</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add searchBoard">
+      <created>1409576006718</created>
+      <updated>1409576006718</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1456" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40615836" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -371,6 +387,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Add searchBoard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add searchBoard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -719,16 +737,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Unit/Service/UserServiceTest.php">
+    <entry file="file://$PROJECT_DIR$/Service/UserService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="268" selection-end="273" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="578">
+        <state line="34" column="28" selection-start="730" selection-end="730" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Service/UserService.php">
+    <entry file="file://$PROJECT_DIR$/Tests/Unit/Service/UserServiceTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.7360335" vertical-offset="0" max-vertical-offset="716">
+        <state line="27" column="5" selection-start="764" selection-end="764" vertical-scroll-proportion="0.64285713" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>

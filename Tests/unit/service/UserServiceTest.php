@@ -4,19 +4,26 @@ namespace Tests\Unit\Service;
 
 use Service\UserService;
 
-/**
- * Created by PhpStorm.
- * User: j.calabrese
- * Date: 29/08/14
- * Time: 11:33
- */
-
 class UserServiceTest extends \PHPUnit_Framework_TestCase
 {
+    protected $userService;
+
+    public function __construct()
+    {
+        $this->userService = new UserService();
+    }
+
     public function testGetKanbanizeApiKey()
     {
-        $userService = new UserService();
-        $apiKey = $userService->getKanbanizeApiKey("joris.calabrese@gmail.com", "3yNGXq2Y");
-        $this->assertEquals("F9nqTym0jeagU2TyuXqkcrGuESlemiFTFiiUmsMB", $apiKey);
+        $apiKey = $this->userService->getKanbanizeApiKey("test.j.calabrese@gmail.com", "test");
+        $this->assertEquals("10kjxMkyZ2lKO5gJj9kLAJRXsF8rpEKWYdl2pfBU", $apiKey);
+    }
+
+    public function testSearchBoard_NominalCase()
+    {
+        $apiKey = $this->userService->getKanbanizeApiKey("test.j.calabrese@gmail.com", "test");
+        $board = $this->userService->searchBoard("personal", $apiKey);
+        $this->assertEquals(3, $board->getName());
+
     }
 }
