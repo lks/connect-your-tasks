@@ -15,4 +15,11 @@ class KanbanizeTaskService implements TaskServiceInterface{
     {
         return null;
     }
+
+    public function listTasks($apiKey, $boardId)
+    {
+        $apiKey = $this->userService->getKanbanizeApiKey("joris.calabrese.test@gmail.com", "test");
+        $board = $this->userService->searchBoard("personal", $apiKey);
+
+    }
 } 

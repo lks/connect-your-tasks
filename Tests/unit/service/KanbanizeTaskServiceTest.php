@@ -15,4 +15,9 @@ class KanbanizeTaskServiceTest {
     {
 
     }
+
+    public function testListTasks_NominalCase()
+    {
+
+    }
 } 
