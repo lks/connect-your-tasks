@@ -31,11 +31,11 @@ class FeatureContext implements SnippetAcceptingContext
      */
     public function iAmAKanbanizeUser()
     {
-        $this->kanbanizeApiKey = $this->userService->getKanbanizeApiKey('test.j.calabrese@gmail.com', 'test');
+        $this->kanbanizeApiKey = $this->userService->getKanbanizeApiKey('joris.calabrese.test@gmail.com', 'test');
     }
 
     /**
-     * @And I have :nbTasks tasks in my personal board
+     * @Given I have :nbTasks tasks in my personal board
      */
     public function iHaveTasksInMyPersonalBoard($nbTasks)
     {
@@ -72,6 +72,14 @@ class FeatureContext implements SnippetAcceptingContext
      * @When I want to consult a given task
      */
     public function iWantToConsultAGivenTask()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Then I should see my :arg1 tasks
+     */
+    public function iShouldSeeMyTasks($arg1)
     {
         throw new PendingException();
     }
