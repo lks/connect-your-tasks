@@ -17,6 +17,6 @@ class UserServiceTest extends \PHPUnit_Framework_TestCase
     {
         $userService = new UserService();
         $apiKey = $userService->getKanbanizeApiKey("joris.calabrese@gmail.com", "3yNGXq2Y");
-        $this->assertEquals("saL5YcK6vQgklKJr5fBLiHH6AjgG4EbyRHly1tbM", $apiKey);
+        $this->assertEquals("F9nqTym0jeagU2TyuXqkcrGuESlemiFTFiiUmsMB", $apiKey);
     }
 }

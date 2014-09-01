@@ -12,6 +12,7 @@ use GuzzleHttp\Client;
 class FeatureContext implements SnippetAcceptingContext
 {
     protected $client;
+    protected $userService;
     protected $kanbanizeApiKey;
     /**
      * Initializes context.
@@ -22,6 +23,7 @@ class FeatureContext implements SnippetAcceptingContext
     public function __construct()
     {
         $this->client = new Client();
+        $this->userService = new \Service\UserService();
     }
 
     /**
@@ -29,21 +31,15 @@ class FeatureContext implements SnippetAcceptingContext
      */
     public function iAmAKanbanizeUser()
     {
-        $this->kanbanizeApiKey = $this->userService->getKanbanizeApiKey('kanbanizeUser1', 'kanbanizePass1');
-
-        $res = $this->client->get('http://kanbanize.com/index.php/api/kanbanize/get_projects_and_boards/',
-            [
-                'headers' =>[
-                    'apikey' => 'saL5YcK6vQgklKJr5fBLiHH6AjgG4EbyRHly1tbM'
-                ]
-            ]);
+        $this->kanbanizeApiKey = $this->userService->getKanbanizeApiKey('joris.calabrese@gmail.com', '3yNGXq2Y');
     }
 
     /**
-     * @And I have (\d+) tasks in my personal board
+     * @And I have :nbTasks tasks in my personal board
      */
     public function iHaveTasksInMyPersonalBoard($nbTasks)
     {
+
         for ($i = 0; $i < $nbTasks; $i++){
             $this->kanbanizeTaskService->addKanbanizeTasks($this->kanbanizeApiKey, $taskName, $boardName);
         }

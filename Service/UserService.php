@@ -26,12 +26,11 @@ class UserService {
         $res = $this->client->post('http://kanbanize.com/index.php/api/kanbanize/login/email/'. urlencode($login) . '/pass/' . $password,
             [
                 'headers' =>[
-                    'apikey' => 'saL5YcK6vQgklKJr5fBLiHH6AjgG4EbyRHly1tbM'
+                    'apikey' => 'F9nqTym0jeagU2TyuXqkcrGuESlemiFTFiiUmsMB'
                 ]
             ]);
 
         $children = $res->xml()->children();
-        var_dump("" . $children->apikey);
         return "" . $children->apikey;
     }
 } 
